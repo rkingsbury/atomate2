@@ -1,7 +1,7 @@
 exclude: '^src/atomate2/vasp/schemas/calc_types/'
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.2.0
+  rev: v4.3.0
   hooks:
   - id: check-yaml
   - id: fix-encoding-pragma
@@ -10,7 +10,7 @@ repos:
   - id: end-of-file-fixer
   - id: trailing-whitespace
 - repo: https://github.com/myint/autoflake
-  rev: v1.4
+  rev: v1.7.7
   hooks:
   - id: autoflake
     args:
@@ -19,7 +19,7 @@ repos:
     - --remove-unused-variables
     - --ignore-init-module-imports
 - repo: https://github.com/psf/black
-  rev: 22.3.0
+  rev: 22.10.0
   hooks:
   - id: black
 - repo: https://github.com/asottile/blacken-docs
@@ -53,7 +53,7 @@ repos:
   - id: rst-directive-colons
   - id: rst-inline-touching-normal
 - repo: https://github.com/pre-commit/mirrors-mypy
-  rev: v0.960
+  rev: v0.990
   hooks:
   - id: mypy
     files: ^src/
@@ -62,7 +62,7 @@ repos:
     - types-pkg_resources==0.1.2
     - types-paramiko
 - repo: https://github.com/codespell-project/codespell
-  rev: v2.1.0
+  rev: v2.2.2
   hooks:
   - id: codespell
     stages: [commit, commit-msg]
